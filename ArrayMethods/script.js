@@ -1,5 +1,5 @@
 /** @format */
-
+"use strict";
 // let fruits = ["Banana", "Orange", "Apple", "Mango"];
 // let fruit = [["Banana", "Orange"],[ "Apple", "Mango"]];
 // let result = fruits.length;
@@ -279,6 +279,127 @@ let students = [
 //  );
 //  console.log(newArr)
 const newArr = students.reduce((acc, elem) => {
-  return acc+elem.age
+  return acc + elem.age;
 }, 0);
-console.log(newArr);
+// console.log(newArr);
+
+const user = {
+  name: "Shahnaz",
+  age: 20,
+  email: "shahnazrtm@gmail.com",
+  address: {
+    country: "Azerbaijan",
+    city: "Baku",
+  },
+};
+
+function GetUser(user) {
+  Object.entries(user).forEach(([key, value]) => {
+    if (typeof value === "object") {
+      // console.log(key);
+      Object.entries(value).forEach(([nestedKey, nestedValue]) => {
+        // console.log(`      ${nestedKey} ${nestedValue}`);
+      });
+    } else {
+      // console.log(key, value);
+    }
+  });
+}
+GetUser(user);
+
+// function GetNumber(arr, eded) {
+//   let count = arr.filter((elem) => elem > eded && elem % eded === 0).length;
+//   console.log(count);
+// }
+// let eded = Number(prompt("Ededi daxil edin"));
+// let arr = [12, 3, 34, 4, 5, 6, 67, 8, 98];
+// GetNumber(arr, eded);
+
+let array = [];
+let min = array[0];
+let max = array[0];
+function RandomNum(array) {
+  for (let i = 0; i < 5; i++) {
+    array.push(Math.floor(Math.random() * 10));
+  }
+  // console.log(array);
+  // console.log(`Max              ${Math.max(...array)}`);
+  // console.log(`Min              ${Math.min(...array)}`);
+}
+RandomNum(array);
+
+let Sum = array.reduce((acc, elem) => {
+  let sum = acc + elem;
+  return sum;
+}, 0);
+// console.log(`Ededlerin cemi   ${Sum}`);
+let overage = Sum / array.length;
+// console.log(`Ededi orta       ${overage}`);
+let squareArr = array.map((num) => Math.pow(num, 2));
+// console.log(`Kvadratlar       ${squareArr}`);
+
+// array iteration methods
+
+let Customers = [
+  {
+    name: "Shahnaz",
+    personal: {
+      age: 21,
+      hobby: ["uzguculuk", "film", "coding"],
+    },
+  },
+  {
+    name: "Gulcin",
+    personal: {
+      age: 21,
+      hobby: ["uzguculuk", "film"],
+    },
+  },
+  {
+    name: "Vusala",
+    personal: {
+      age: 10,
+      hobby: ["gezmek", "oynamaq"],
+    },
+  },
+  {
+    name: "Shovgu",
+    personal: {
+      age: 26,
+      hobby: ["bekarciliq", "coding"],
+    },
+  },
+];
+// butun hobbyleri bir arraye yigir
+function getHobby(array) {
+  let arr = [];
+  array.map((elem) => {
+    let a = elem.personal.hobby;
+    arr.push(a);
+  });
+  console.log(arr.flat());
+}
+
+getHobby(Customers);
+
+let hour = Math.floor(Math.random()*25);
+console.log(hour);
+
+function GetHours(hour) {
+  if (hour > 8 && hour < 13) {
+    alert("Sabahınız xeyir");
+  } else if (hour > 13 && hour < 18) {
+    alert("Günortanız xeyir");
+  } else {
+    alert("Geceniz xeyre");
+  }
+}
+
+GetHours(hour);
+
+
+
+function Check(params) {
+  
+}
+Check(1,2,3,4)
