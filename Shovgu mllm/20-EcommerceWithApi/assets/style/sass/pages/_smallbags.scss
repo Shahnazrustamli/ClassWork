@@ -1,0 +1,93 @@
+#basicsbag {
+    width: 100%;
+    background-color: white;
+    margin-top: 80px;
+    
+
+    .container {
+        background-color: white;
+
+        .smallbagsgrid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 24px;
+            .smallbags{
+                width: 264px;
+                height: 162px;
+                border-radius: 8px;
+                background-color: #F5F5F5;
+                position: relative;
+
+                h3{
+                    font-family: "Poppins";
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #000000;
+                    padding-top: 24px;
+                    padding-left: 24px;
+                }
+
+                .shbag{
+                    position: absolute;
+                    right: 0px;
+                    top:18px;
+                }
+
+                .handbg{
+                    position: absolute;
+                    right: 0px;
+                    top: 65px;
+                }
+
+                .laptop {
+                    position: absolute;
+                    right: 0px;
+                    top: 10px;
+                    display: flex;
+                    align-items: baseline;
+                }
+
+                .eveningbags{
+                    position: absolute;
+                    right: 0px;
+                    top: 65px;
+                }
+
+                .rightarrow {
+                    border-radius: 50px;
+                    border: 1px solid #EBEBEB;
+                    background-color: white;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    right: -20px;
+                    top: 70px;
+
+                    img{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: absolute;
+                        right: 13px;
+                        top: 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #basicsbag {
+
+        .container {
+            display: flex;
+            justify-content: center;
+            .smallbagsgrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+  }

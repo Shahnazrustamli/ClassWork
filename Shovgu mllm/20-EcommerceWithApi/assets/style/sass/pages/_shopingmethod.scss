@@ -1,0 +1,55 @@
+#attributessec{
+    width: 100%;
+    background-color: #F7F7F7;
+
+    .container {
+        background-color: #F7F7F7;
+        .attributes {
+            height: 144px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            .attributesitems {
+                    display: flex;
+                    align-items: center;
+                a{
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    gap: 12px;
+
+                    p{
+                        font-family: "Poppins";
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: #000000;
+                    }
+
+                    .delivery{width: 166px;}
+                    .comeback{width: 147px;}
+                    .safe {width: 240px;}
+                    .payment{width: 239px;}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #attributessec{
+
+        .container {
+
+            .attributes {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+                .attributesitems{
+                    display: flex;
+                    align-items: center;
+                    margin-left: 150px;
+                }
+            }
+        }
+    }
+  }

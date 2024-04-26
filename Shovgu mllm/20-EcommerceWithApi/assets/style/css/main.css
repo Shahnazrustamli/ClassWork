@@ -1,0 +1,3898 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1128px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url(../../../../assets/fonts/Palanquin-Bold.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(../../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(/assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url(/assets/fonts/Palanquin-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #007878;
+  color: rgba(255, 255, 255, 0.7490196078);
+  width: 100%;
+  height: 48px;
+}
+.header .containerHeader {
+  max-width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Poppins";
+}
+.header .containerHeader .Rightheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .containerHeader .Rightheader p {
+  width: 120px;
+  height: 24px;
+  padding-left: 4px;
+  padding-top: 2px;
+  padding-bottom: 6px;
+  font-family: "Poppins";
+}
+.header .containerHeader .Rightheader p img {
+  width: 24px;
+  height: 24px;
+}
+.header .containerHeader .Leftheader {
+  display: flex;
+  padding: 17px 0 14px 0;
+}
+.header .containerHeader .Leftheader .line {
+  width: 4px;
+  height: 20px;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    display: none;
+  }
+}
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 158px;
+  border-bottom: 1px solid rgba(39, 49, 66, 0.15);
+}
+.navbar .nav {
+  max-width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.navbar .nav .navtext {
+  font-size: 40px;
+  font-weight: 700px;
+  line-height: 40px;
+}
+.navbar .nav .navtext h1 {
+  font-family: "Palanquin";
+  font-weight: bold;
+}
+.navbar .nav .inputnav {
+  position: relative;
+}
+.navbar .nav .inputnav .inputsearch {
+  width: 504px;
+  height: 48px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  border: none;
+}
+.navbar .nav .inputnav .imgsearch {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.navbar .nav .inputnav input::placeholder {
+  color: #aaaaaa;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400px;
+  font-family: "Poppins";
+}
+.navbar .nav .leftnav {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+.navbar .nav .leftnav .leftnavmix {
+  display: flex;
+  align-items: center;
+}
+.navbar .nav .leftnav .leftnavmix img {
+  width: 24px;
+  height: 24px;
+}
+.navbar .nav .leftnav .leftnavmix a {
+  height: 17px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #2e2e2e;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.navbar .navfooter {
+  width: 1128px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 32px;
+}
+.navbar .navfooter a {
+  text-decoration: none;
+  color: #273142;
+  margin-right: 54px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Poppins";
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar {
+    background-color: white;
+    width: 100%;
+    height: 158px;
+  }
+  .navbar .nav {
+    display: flex;
+    align-items: center;
+    max-width: 992px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  .navbar .nav .navtext {
+    padding-left: 150px;
+    font-size: 40px;
+    font-weight: 700px;
+    line-height: 40px;
+  }
+  .navbar .nav .navtext h1 {
+    font-family: "Palanquin";
+  }
+  .navbar .nav .inputnav {
+    position: relative;
+  }
+  .navbar .nav .inputnav .inputsearch {
+    margin-left: 10px;
+    max-width: 304px;
+    height: 48px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    border: none;
+  }
+  .navbar .nav .inputnav .imgsearch {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+  }
+  .navbar .nav .inputnav input::placeholder {
+    color: #aaaaaa;
+    padding-left: 16px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 400px;
+    font-family: "Poppins";
+  }
+  .navbar .nav .leftnav {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+  }
+  .navbar .nav .leftnav .leftnavmix {
+    margin-top: 10px;
+  }
+  .navbar .nav .leftnav .leftnavmix img {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar .nav .leftnav .leftnavmix a {
+    display: none;
+    height: 17px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .navbar .navfooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    max-width: 1128px;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 10px;
+    padding-left: 100px;
+  }
+  .navbar .navfooter a {
+    width: 200px;
+    text-decoration: none;
+    color: #273142;
+    margin-right: 1px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Poppins";
+  }
+}
+.section1 {
+  background-color: white;
+  width: 100%;
+}
+.section1 .bagscontainer {
+  max-width: 1128px;
+  margin: auto;
+}
+.section1 .bagscontainer .bagsheader {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 135px;
+}
+.section1 .bagscontainer .bagsheader h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 54.4px;
+  font-family: "Rubik";
+}
+.section1 .bagscontainer .bagsheader .view {
+  display: flex;
+  align-items: center;
+}
+.section1 .bagscontainer .bagsheader .view a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+.section1 .bagscontainer .bagcards {
+  align-items: center;
+  display: inline-block;
+  padding-left: 10px;
+}
+.section1 .bagscontainer .bagcards .baggrid {
+  position: relative;
+  margin-top: 32px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag {
+  background-color: #f9f9f9;
+  width: 360px;
+  height: 508px;
+  border-radius: 8px;
+  padding-left: 24px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+  display: flex;
+  justify-content: center;
+  padding-right: 24px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 9px;
+  padding-right: 24px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+  padding-right: 24px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .stars {
+  padding-top: 16px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .abouttext {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Rubik";
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .bagfee {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #f75145;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgba(54, 54, 54, 0.75);
+  padding-left: 16px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+  padding-top: 31px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+  width: 312px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .new button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(67, 209, 103);
+  color: white;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .otuz {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .otuz button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(223, 66, 68);
+  color: white;
+}
+.section1 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+  position: absolute;
+  top: 16px;
+  left: 322px;
+}
+
+@media only screen and (max-width: 992px) {
+  .section1 {
+    background-color: white;
+    width: 100%;
+  }
+  .section1 .bagscontainer {
+    max-width: 1128px;
+    margin: auto;
+  }
+  .section1 .bagscontainer .bagsheader {
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: 1fr 135px;
+  }
+  .section1 .bagscontainer .bagsheader h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54.4px;
+    font-family: "Rubik";
+    width: 500px;
+    padding-left: 200px;
+  }
+  .section1 .bagscontainer .bagsheader .view {
+    width: 700px;
+    display: flex;
+    align-items: center;
+  }
+  .section1 .bagscontainer .bagsheader .view a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Rubik";
+    font-size: 15px;
+  }
+  .section1 .bagscontainer .bagcards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid {
+    position: relative;
+    margin-top: 32px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag {
+    background-color: #f9f9f9;
+    width: 360px;
+    height: 508px;
+    border-radius: 8px;
+    padding-left: 24px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9px;
+    padding-right: 24px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+    padding-right: 24px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .stars {
+    padding-top: 16px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .abouttext {
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Rubik";
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .bagfee {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #f75145;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgba(54, 54, 54, 0.75);
+    padding-left: 16px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+    padding-top: 31px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+    width: 312px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .new {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .new button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(67, 209, 103);
+    color: white;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .otuz {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .otuz button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(223, 66, 68);
+    color: white;
+  }
+  .section1 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+    position: absolute;
+    top: 16px;
+    left: 322px;
+  }
+}
+.section2 {
+  background-color: rgb(255, 247, 247);
+  width: 100%;
+}
+.section2 .bagscontainer {
+  max-width: 1128px;
+  margin: auto;
+}
+.section2 .bagscontainer .bagsheader {
+  padding-top: 72px;
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 135px;
+}
+.section2 .bagscontainer .bagsheader h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 54.4px;
+  font-family: "Rubik";
+}
+.section2 .bagscontainer .bagsheader .view {
+  display: flex;
+  align-items: center;
+}
+.section2 .bagscontainer .bagsheader .view a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+.section2 .bagscontainer .bagcards {
+  align-items: center;
+  display: inline-block;
+  padding-left: 10px;
+}
+.section2 .bagscontainer .bagcards .baggrid {
+  position: relative;
+  margin-top: 32px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag {
+  background-color: white;
+  width: 360px;
+  height: 508px;
+  border-radius: 8px;
+  padding-left: 24px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 116px;
+  padding-right: 24px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 9px;
+  padding-right: 24px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-right: 24px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .stars {
+  padding-top: 16px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .abouttext {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Rubik";
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .bagfee {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #f75145;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgba(54, 54, 54, 0.75);
+  padding-left: 16px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+  padding-top: 31px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+  width: 312px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .new button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(67, 209, 103);
+  color: white;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .otuz {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .otuz button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(223, 66, 68);
+  color: white;
+}
+.section2 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+  position: absolute;
+  top: 16px;
+  left: 322px;
+}
+
+@media only screen and (max-width: 992px) {
+  .section2 {
+    background-color: rgb(255, 247, 247);
+    width: 100%;
+  }
+  .section2 .bagscontainer {
+    max-width: 1128px;
+    margin: auto;
+  }
+  .section2 .bagscontainer .bagsheader {
+    padding-top: 72px;
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: 1fr 135px;
+  }
+  .section2 .bagscontainer .bagsheader h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54.4px;
+    font-family: "Rubik";
+    width: 500px;
+    padding-left: 200px;
+  }
+  .section2 .bagscontainer .bagsheader .view {
+    display: flex;
+    align-items: center;
+  }
+  .section2 .bagscontainer .bagsheader .view a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Rubik";
+    font-size: 15px;
+  }
+  .section2 .bagscontainer .bagcards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid {
+    position: relative;
+    margin-top: 32px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag {
+    background-color: white;
+    width: 360px;
+    height: 508px;
+    border-radius: 8px;
+    padding-left: 24px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 116px;
+    padding-right: 24px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 9px;
+    padding-right: 24px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-right: 24px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .stars {
+    padding-top: 16px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .abouttext {
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Rubik";
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .bagfee {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #f75145;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgba(54, 54, 54, 0.75);
+    padding-left: 16px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+    padding-top: 31px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+    width: 312px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .new {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .new button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(67, 209, 103);
+    color: white;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .otuz {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .otuz button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(223, 66, 68);
+    color: white;
+  }
+  .section2 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+    position: absolute;
+    top: 16px;
+    left: 322px;
+  }
+}
+.section3 {
+  background-color: white;
+  width: 100%;
+}
+.section3 .bagscontainer {
+  max-width: 1128px;
+  margin: auto;
+}
+.section3 .bagscontainer .bagsheader {
+  margin-top: 96px;
+  display: grid;
+  grid-template-columns: 1fr 135px;
+}
+.section3 .bagscontainer .bagsheader h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 54.4px;
+  font-family: "Rubik";
+}
+.section3 .bagscontainer .bagsheader .view {
+  display: flex;
+  align-items: center;
+}
+.section3 .bagscontainer .bagsheader .view a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Rubik";
+  font-size: 15px;
+}
+.section3 .bagscontainer .bagcards {
+  align-items: center;
+  display: inline-block;
+  padding-left: 10px;
+}
+.section3 .bagscontainer .bagcards .baggrid {
+  position: relative;
+  margin-top: 32px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag {
+  background-color: #f9f9f9;
+  width: 360px;
+  height: 508px;
+  border-radius: 8px;
+  padding-left: 24px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+  display: flex;
+  justify-content: center;
+  padding-right: 24px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  padding-right: 24px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+  display: flex;
+  justify-content: center;
+  padding-right: 24px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .stars {
+  padding-top: 16px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .abouttext {
+  padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Rubik";
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .bagfee {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: #f75145;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  color: rgba(54, 54, 54, 0.75);
+  padding-left: 16px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+  padding-top: 31px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+  width: 312px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .new button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(67, 209, 103);
+  color: white;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .otuz {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .otuz button {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(223, 66, 68);
+  color: white;
+}
+.section3 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+  position: absolute;
+  top: 16px;
+  left: 322px;
+}
+
+@media only screen and (max-width: 992px) {
+  .section3 {
+    background-color: white;
+    width: 100%;
+  }
+  .section3 .bagscontainer {
+    max-width: 1128px;
+    margin: auto;
+  }
+  .section3 .bagscontainer .bagsheader {
+    margin-top: 96px;
+    display: grid;
+    grid-template-columns: 1fr 135px;
+  }
+  .section3 .bagscontainer .bagsheader h1 {
+    width: 500px;
+    padding-left: 200px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 54.4px;
+    font-family: "Rubik";
+  }
+  .section3 .bagscontainer .bagsheader .view {
+    display: flex;
+    align-items: center;
+  }
+  .section3 .bagscontainer .bagsheader .view a {
+    text-decoration: none;
+    color: #000000;
+    font-family: "Rubik";
+    font-size: 15px;
+  }
+  .section3 .bagscontainer .bagcards {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid {
+    position: relative;
+    margin-top: 32px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag {
+    background-color: #f9f9f9;
+    width: 360px;
+    height: 508px;
+    border-radius: 8px;
+    padding-left: 24px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .imgbag1 {
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .imgbag2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 22px;
+    padding-right: 24px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .imgbag3 {
+    display: flex;
+    justify-content: center;
+    padding-right: 24px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .stars {
+    padding-top: 16px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .abouttext {
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Rubik";
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .bagfee {
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .bagfee span {
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: "Poppins";
+    color: #f75145;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .bagfee p {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: rgba(54, 54, 54, 0.75);
+    padding-left: 16px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .bagbutton {
+    padding-top: 31px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .bagbutton button {
+    width: 312px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 16px;
+    line-height: 27.2px;
+    font-weight: 500;
+    font-family: "Poppins";
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .new {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .new button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(67, 209, 103);
+    color: white;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .otuz {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .otuz button {
+    width: 79px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(223, 66, 68);
+    color: white;
+  }
+  .section3 .bagscontainer .bagcards .baggrid .bag .aciqurey {
+    position: absolute;
+    top: 16px;
+    left: 322px;
+  }
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../../../../assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url(../../../../assets/fonts/Palanquin-Bold.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(../../../../assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Rubik";
+  src: url(/assets/fonts/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Palanquin";
+  src: url(/assets/fonts/Palanquin-Medium.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1128px;
+  margin: auto;
+}
+
+#upsection {
+  width: 100%;
+  background-color: #FFE2E0;
+}
+#upsection .container {
+  background-color: #FFE2E0;
+}
+#upsection .container .products {
+  height: 584px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#upsection .container .products .productsItems {
+  display: flex;
+  align-items: center;
+}
+#upsection .container .products .productsItems div .discount {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 24px;
+  color: #DF4244;
+  padding-bottom: 15px;
+}
+#upsection .container .products .productsItems div h1 {
+  font-family: "Rubik";
+  font-weight: 700;
+  font-size: 40px;
+  color: #212121;
+  padding-bottom: 15px;
+}
+#upsection .container .products .productsItems div p {
+  font-family: "Poppins";
+  color: #212121;
+  opacity: 75%;
+  width: 453px;
+  font-size: 16px;
+  line-height: 27.2px;
+  font-weight: 400;
+}
+#upsection .container .products .productsItems div .btn {
+  padding-top: 48px;
+}
+#upsection .container .products .productsItems div .btn button {
+  width: 192px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #206363;
+  border: none;
+}
+#upsection .container .products .productsItems div .btn button a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+}
+#upsection .container .products .productsItems div .objects {
+  display: flex;
+  gap: 17px;
+  padding-top: 128px;
+}
+#upsection .container .products .productsItems div .objects .circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #206363;
+  opacity: 25%;
+}
+#upsection .container .products .productsItems div .objects .oval {
+  width: 26px;
+  height: 12px;
+  border-radius: 8px;
+  background-color: #DF4244;
+}
+
+@media only screen and (max-width: 992px) {
+  #upsection .container .products {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #upsection .container .products .productsItems {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #upsection .container .products .productsItems img {
+    width: 300px;
+    height: 300px;
+  }
+  #upsection .container .products .productsItems div .objects {
+    display: none;
+  }
+}
+#attributessec {
+  width: 100%;
+  background-color: #F7F7F7;
+}
+#attributessec .container {
+  background-color: #F7F7F7;
+}
+#attributessec .container .attributes {
+  height: 144px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#attributessec .container .attributes .attributesitems {
+  display: flex;
+  align-items: center;
+}
+#attributessec .container .attributes .attributesitems a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+}
+#attributessec .container .attributes .attributesitems a p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+#attributessec .container .attributes .attributesitems a .delivery {
+  width: 166px;
+}
+#attributessec .container .attributes .attributesitems a .comeback {
+  width: 147px;
+}
+#attributessec .container .attributes .attributesitems a .safe {
+  width: 240px;
+}
+#attributessec .container .attributes .attributesitems a .payment {
+  width: 239px;
+}
+
+@media only screen and (max-width: 992px) {
+  #attributessec .container .attributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #attributessec .container .attributes .attributesitems {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+  }
+}
+#basicsbag {
+  width: 100%;
+  background-color: white;
+  margin-top: 80px;
+}
+#basicsbag .container {
+  background-color: white;
+}
+#basicsbag .container .smallbagsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+#basicsbag .container .smallbagsgrid .smallbags {
+  width: 264px;
+  height: 162px;
+  border-radius: 8px;
+  background-color: #F5F5F5;
+  position: relative;
+}
+#basicsbag .container .smallbagsgrid .smallbags h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #000000;
+  padding-top: 24px;
+  padding-left: 24px;
+}
+#basicsbag .container .smallbagsgrid .smallbags .shbag {
+  position: absolute;
+  right: 0px;
+  top: 18px;
+}
+#basicsbag .container .smallbagsgrid .smallbags .handbg {
+  position: absolute;
+  right: 0px;
+  top: 65px;
+}
+#basicsbag .container .smallbagsgrid .smallbags .laptop {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  display: flex;
+  align-items: baseline;
+}
+#basicsbag .container .smallbagsgrid .smallbags .eveningbags {
+  position: absolute;
+  right: 0px;
+  top: 65px;
+}
+#basicsbag .container .smallbagsgrid .smallbags .rightarrow {
+  border-radius: 50px;
+  border: 1px solid #EBEBEB;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -20px;
+  top: 70px;
+}
+#basicsbag .container .smallbagsgrid .smallbags .rightarrow img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 13px;
+  top: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+  #basicsbag .container {
+    display: flex;
+    justify-content: center;
+  }
+  #basicsbag .container .smallbagsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+#footer {
+  width: 100%;
+  background-color: #F7F7F9;
+}
+#footer .container .topfooter {
+  margin-top: 128px;
+  height: 115px;
+  border-bottom: 1px solid rgba(39, 49, 66, 0.2784313725);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F7F7F9;
+  width: 100%;
+}
+#footer .container .topfooter h1 {
+  font-family: "Palanquin";
+  font-weight: bold;
+  font-size: 40px;
+}
+#footer .container .topfooter .searchBox {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  border: 1px solid #9E9E9E;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+}
+#footer .container .topfooter .searchBox input {
+  width: 504px;
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Poppins";
+  color: #AAAAAA;
+}
+#footer .container .downfooter {
+  height: 431px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-content: center;
+  justify-content: space-between;
+  background-color: #F7F7F9;
+}
+#footer .container .downfooter .downitems {
+  display: flex;
+  flex-direction: column;
+}
+#footer .container .downfooter .downitems .downp {
+  font-family: "Poppins";
+  color: #212121;
+  opacity: 75%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27.2px;
+  padding-bottom: 40px;
+  width: 326px;
+}
+#footer .container .downfooter .downitems a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+}
+#footer .container .downfooter .downitems .email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 24px;
+}
+#footer .container .downfooter .downitems .email a {
+  color: #212121;
+  opacity: 75%;
+  font-family: "Poppins";
+}
+#footer .container .downfooter .downitems .phone {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 48px;
+}
+#footer .container .downfooter .downitems .phone a {
+  color: #212121;
+  opacity: 75%;
+  font-family: "Rubik";
+}
+#footer .container .downfooter .downitems .send {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #171717;
+  opacity: 80%;
+  border-radius: 8px;
+  height: 48px;
+  width: 179px;
+  justify-content: center;
+}
+#footer .container .downfooter .downitems .send a {
+  color: #212121;
+  opacity: 90%;
+  font-family: "Poppins";
+}
+#footer .container .downfooter .downitems h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 18px;
+  color: #212121;
+  padding-bottom: 20px;
+}
+#footer .container .downfooter .downitems .txt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+  padding-bottom: 20px;
+}
+#footer .bottomfooter {
+  width: 100%;
+  background-color: #FFFFFF;
+}
+#footer .bottomfooter .container {
+  background-color: #FFFFFF;
+}
+#footer .bottomfooter .container .bottomitems {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+#footer .bottomfooter .container .bottomitems p {
+  font-family: "Poppins";
+  color: #212121;
+  opacity: 75%;
+  font-weight: 400;
+  font-size: 16px;
+}
+#footer .bottomfooter .container .bottomitems .socialmedias a {
+  text-decoration: none;
+}
+#footer .bottomfooter .container .bottomitems .socialmedias .wp {
+  padding-left: 36px;
+}
+#footer .bottomfooter .container .bottomitems .socialmedias .fb {
+  padding-left: 36px;
+}
+
+@media only screen and (max-width: 992px) {
+  #footer .container .topfooter {
+    display: flex;
+    justify-content: center;
+  }
+  #footer .container .topfooter .searchBox {
+    display: none;
+  }
+  #footer .container .downfooter {
+    height: 445px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #footer .container .downfooter .downitems {
+    align-items: center;
+  }
+  #footer .container .downfooter .downitems p {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  #footer .container .downfooter .downitems .phone {
+    padding-bottom: 20px;
+  }
+  #footer .container .downfooter .downitems h2 {
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  #footer .container .downfooter .downitems .txt {
+    padding-bottom: 10px;
+  }
+  #footer .bottomfooter .container .bottomitems {
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer .bottomfooter .container .bottomitems .socialmedias a {
+    text-decoration: none;
+  }
+  #footer .bottomfooter .container .bottomitems .socialmedias .wp {
+    padding-left: 15px;
+  }
+  #footer .bottomfooter .container .bottomitems .socialmedias .fb {
+    padding-left: 15px;
+  }
+}
+#shoulderbags {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+#shoulderbags .main .container {
+  background-color: rgb(255, 255, 255);
+}
+#shoulderbags .main .container .home {
+  padding-top: 32px;
+  margin-bottom: 6px;
+  gap: 13px;
+  display: flex;
+  align-items: center;
+}
+#shoulderbags .main .container .home a {
+  text-decoration: none;
+}
+#shoulderbags .main .container .home .hometxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1D1D1D;
+}
+#shoulderbags .main .container .home .shouldertxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1D1D1D;
+  opacity: 75%;
+}
+#shoulderbags .main .container h1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 40px;
+  color: #212121;
+  padding-bottom: 14px;
+}
+#shoulderbags .main .container .basics {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 27px;
+  padding-bottom: 32px;
+}
+#shoulderbags .main .container .basics p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 90%;
+}
+#shoulderbags .main .container .basics .featured {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#shoulderbags .main .container .basics .featured a {
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 90%;
+}
+#shoulderbags .main .container .leftandright {
+  display: flex;
+  gap: 40px;
+}
+#shoulderbags .main .container .leftandright .allcategories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories {
+  width: 326px;
+  height: 340px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 40px;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories .downarrow {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories .uparrow {
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories ul {
+  padding-left: 40px;
+  padding-top: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories ul a {
+  text-decoration: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories ul a .sametxt {
+  list-style: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 90%;
+  padding-bottom: 16px;
+}
+#shoulderbags .main .container .leftandright .allcategories .categories ul a .diftxt {
+  list-style: none;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+  padding-bottom: 16px;
+}
+#shoulderbags .main .container .leftandright .allcategories .material {
+  width: 326px;
+  height: 340px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .allcategories .material h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .downarrow {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .uparrow {
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thesame {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: none;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;
+  opacity: 90%;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thesame:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thesame:hover {
+  background-color: rgba(224, 213, 213, 0.9058823529);
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thesame:checked {
+  background-color: #EF544F;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thesame:checked:after {
+  display: block;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thedifferent {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thedifferent:after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f00c";
+  font-weight: 900;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thedifferent:checked {
+  background-color: #EF544F;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .thedifferent:checked:after {
+  display: block;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .samelabel {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 90%;
+}
+#shoulderbags .main .container .leftandright .allcategories .material .diflabel {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial {
+  width: 326px;
+  height: 146px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .downarrow {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .uparrow {
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .items {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 40px;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .items .firstprice {
+  border: 1px solid #C8C8C8;
+  padding: 7px 24px 6px 21px;
+  border-radius: 8px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .items .line {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .items .secondprice {
+  border: 1px solid #C8C8C8;
+  padding: 7px 21px 6px 21px;
+  border-radius: 8px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .secondmaterial .items .lupa {
+  border-radius: 8px;
+  background-color: #EF544F;
+  padding: 7px 16px 7px 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .size {
+  width: 326px;
+  height: 146px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .allcategories .size h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .downarrow {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .uparrow {
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .sizeitems {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-left: 40px;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .sizeitems .xssize {
+  border: 1px solid #C8C8C8;
+  border-radius: 8px;
+  padding: 7px 22px 6px 23px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .sizeitems .ssize {
+  border: 1px solid #C8C8C8;
+  border-radius: 8px;
+  padding: 7px 27px 6px 27px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .size .sizeitems .msize {
+  border: 1px solid #C8C8C8;
+  border-radius: 8px;
+  padding: 7px 25px 6px 25px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#shoulderbags .main .container .leftandright .allcategories .color {
+  width: 326px;
+  height: 146px;
+  border: 1px solid #D0D0D0;
+  border-radius: 8px;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .allcategories .color h2 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 20px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 40px;
+  padding-bottom: 24px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .downarrow {
+  position: absolute;
+  right: 38px;
+  top: 15px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .uparrow {
+  display: none;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 40px;
+  padding-bottom: 16px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .same {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circleborder {
+  border: 1px solid #273142;
+  opacity: 75%;
+  padding: 3px;
+  border-radius: 50px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circleborder .circle1 {
+  background-color: #275240;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle2 {
+  background-color: #0085FF;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle3 {
+  background-color: #3D2A33;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle4 {
+  background-color: #773838;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle5 {
+  background-color: #000000;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle6 {
+  background-color: #307E46;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .firstrow .circle7 {
+  background-color: #0085FF;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  padding-left: 44px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .same {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle8 {
+  background-color: #FF6B00;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle9 {
+  background-color: #D6B73B;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle10 {
+  background-color: #7C4DFF;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle11 {
+  background-color: #F75145;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle12 {
+  background-color: #842759;
+}
+#shoulderbags .main .container .leftandright .allcategories .color .secondrow .circle13 {
+  background-color: #895C31;
+}
+#shoulderbags .main .container .leftandright .bagsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags {
+  width: 360px;
+  height: 510px;
+  border-radius: 8px;
+  background-color: #F9F9F9;
+  position: relative;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .off {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #DF4244;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .off p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .new {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #43D167;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .new p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .heart {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .fullheart {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .bagimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .bagimgg {
+  display: flex;
+  justify-content: center;
+  height: 255px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .stars {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .txtt {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 16px;
+  width: 302px;
+  line-height: 27px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+  color: #000000;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .to {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  color: #F75145;
+  padding-left: 24px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .from {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #363636;
+  opacity: 75%;
+  padding-left: 18px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .btn {
+  width: 312px;
+  height: 48px;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+#shoulderbags .main .container .leftandright .bagsgrid .bags .btn button {
+  border: none;
+  background: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+}
+
+@media only screen and (max-width: 992px) {
+  #shoulderbags .main .container .home {
+    display: flex;
+    justify-content: center;
+  }
+  #shoulderbags .main .container h1 {
+    text-align: center;
+  }
+  #shoulderbags .main .container .basics {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .categories {
+    border: none;
+    height: 20px;
+    position: relative;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .categories .downarrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .categories .uparrow {
+    display: block;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .categories ul {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .material {
+    border: none;
+    height: 20px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .material .downarrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .material .uparrow {
+    display: block;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .material .cloth, #shoulderbags .main .container .leftandright .allcategories .material .cotton, #shoulderbags .main .container .leftandright .allcategories .material .jeans, #shoulderbags .main .container .leftandright .allcategories .material .leathers, #shoulderbags .main .container .leftandright .allcategories .material .fur, #shoulderbags .main .container .leftandright .allcategories .material .glitter {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .secondmaterial {
+    border: none;
+    height: 20px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .secondmaterial .downarrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .secondmaterial .uparrow {
+    display: block;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .secondmaterial .items {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .size {
+    border: none;
+    height: 20px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .size .downarrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .size .uparrow {
+    display: block;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .size .sizeitems {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .color {
+    border: none;
+    height: 20px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .color .downarrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .color .uparrow {
+    display: block;
+    position: absolute;
+    right: 140px;
+    top: 13px;
+  }
+  #shoulderbags .main .container .leftandright .allcategories .color .firstrow, #shoulderbags .main .container .leftandright .allcategories .color .secondrow {
+    display: none;
+  }
+  #shoulderbags .main .container .leftandright .bagsgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.containerbox {
+  font-family: "Poppins";
+  width: 1128px;
+  margin: auto;
+}
+.containerbox .home {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  gap: 13px;
+  display: flex;
+  align-items: center;
+}
+.containerbox .home a {
+  text-decoration: none;
+}
+.containerbox .home .hometxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1d1d;
+}
+.containerbox .home .shouldertxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1d1d;
+  opacity: 75%;
+}
+.containerbox .imageinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+}
+.containerbox .imageinfo .image {
+  display: flex;
+}
+.containerbox .imageinfo .image .box1 .img {
+  width: 72px;
+  height: 94px;
+  border: 1px solid rgb(228, 228, 228);
+  margin-top: 16px;
+  margin-right: 16px;
+  border-radius: 3px;
+}
+.containerbox .imageinfo .image .box1 .img img {
+  width: 72px;
+  height: 94px;
+}
+.containerbox .imageinfo .image .box1 .imgfirst {
+  border: 1px solid rgb(32, 99, 99);
+  margin-top: 0;
+}
+.containerbox .imageinfo .image .box1 .yuxariox {
+  padding-left: 24px;
+}
+.containerbox .imageinfo .image .box1 .asagiox {
+  padding-left: 24px;
+}
+.containerbox .imageinfo .image .box2 {
+  position: relative;
+  width: 456px;
+  height: 473px;
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerbox .imageinfo .image .box2 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerbox .imageinfo .image .box2 span {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 79px;
+  line-height: 32px;
+  background-color: #df4244;
+  text-align: center;
+  color: #f9f9f9;
+  border-radius: 10px;
+}
+.containerbox .imageinfo .image .box2 i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #df4244;
+}
+.containerbox .imageinfo .image .box2 .imgurey {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #df4244;
+}
+.containerbox .imageinfo .info {
+  display: flex;
+  flex-direction: column;
+  width: 512px;
+}
+.containerbox .imageinfo .info .name {
+  margin-bottom: 8px;
+  font-family: "Rubik";
+  font-size: 22px;
+  font-weight: 600px;
+}
+.containerbox .imageinfo .info .rating {
+  margin-bottom: 24px;
+}
+.containerbox .imageinfo .info .rating i {
+  color: #ffdd45;
+}
+.containerbox .imageinfo .info .price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.containerbox .imageinfo .info .price .btn {
+  width: 224px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 8px;
+  transition: 300ms;
+  cursor: pointer;
+}
+.containerbox .imageinfo .info .price .btn:hover {
+  border: 1px solid red;
+}
+.containerbox .imageinfo .info .price .btn:hover p {
+  color: red;
+}
+.containerbox .imageinfo .info .customms {
+  margin-top: 32px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.containerbox .imageinfo .info .customms .size {
+  display: flex;
+  flex-direction: column;
+  width: 224px;
+}
+.containerbox .imageinfo .info .customms .size span {
+  margin-bottom: 16px;
+}
+.containerbox .imageinfo .info .customms .size .sizebox {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.containerbox .imageinfo .info .customms .size .sizebox .size_btn {
+  width: 64px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 10px;
+}
+.containerbox .imageinfo .info .customms .size .sizebox .xs {
+  border: 1px solid black;
+}
+.containerbox .imageinfo .info .customms .color {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 224px;
+}
+.containerbox .imageinfo .info .customms .color span {
+  margin-bottom: 16px;
+}
+.containerbox .imageinfo .info .customms .color .colorbox {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 105px;
+}
+.containerbox .imageinfo .info .customms .color .colorbox .borderbtn1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  outline: 1px solid rgba(39, 49, 66, 0.75);
+  border-radius: 50px;
+}
+.containerbox .imageinfo .info .customms .color .colorbox .borderbtn1 .color_btn1 {
+  background-color: rgb(205, 92, 11);
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+}
+.containerbox .imageinfo .info .customms .color .colorbox .color_btn2 {
+  background-color: rgb(0, 133, 255);
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+}
+.containerbox .imageinfo .info .customms .color .colorbox .color_btn3 {
+  background-color: rgb(53, 120, 59);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.containerbox .imageinfo .info .customms .color .colorbox .color_btn4 {
+  background-color: rgb(237, 8, 117);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+.containerbox .imageinfo .info .cardbutton {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.containerbox .imageinfo .info .cardbutton .add {
+  width: 244px;
+  line-height: 52px;
+  background: #df4244;
+  text-align: center;
+  border-radius: 5px;
+  color: #f9f9f9;
+  margin-bottom: 16px;
+}
+.containerbox .imageinfo .info .cardbutton .cash {
+  width: 244px;
+  line-height: 52px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 16px;
+}
+.containerbox .imageinfo .info .text a {
+  color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 992px) {
+  .containerbox {
+    font-family: "Poppins";
+    width: 1128px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .containerbox .home {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    gap: 13px;
+  }
+  .containerbox .home a {
+    text-decoration: none;
+  }
+  .containerbox .home .hometxt {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+  }
+  .containerbox .home .shouldertxt {
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 14px;
+    color: #1d1d1d;
+    opacity: 75%;
+  }
+  .containerbox .imageinfo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 64px;
+  }
+  .containerbox .imageinfo .image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .containerbox .imageinfo .image .box1 {
+    display: flex;
+  }
+  .containerbox .imageinfo .image .box1 .img img {
+    width: 72px;
+    height: 94px;
+  }
+}
+.review .containerreview {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.review .containerreview .mentionreview {
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(39, 49, 66, 0.15);
+}
+.review .containerreview .mentionreview .titlereview {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.review .containerreview .mentionreview .titlereview span {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  font-family: "Poppins";
+  color: rgb(133, 133, 133);
+}
+.review .containerreview .mentionreview .titlereview .redline {
+  border-bottom: 4px solid red;
+}
+.review .containerreview .mentionreview .titlereview .redline p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.review .containerreview .discription {
+  padding-left: 41px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 960px;
+  height: 186px;
+  border-radius: 8px;
+  border: 1px solid rgba(33, 33, 33, 0.28);
+}
+.review .containerreview .discription h3 {
+  padding-top: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  font-family: "Rubik";
+  color: rgb(33, 33, 33);
+}
+.review .containerreview .discription h3 img {
+  padding-left: 24px;
+}
+.review .containerreview .discription h5 {
+  padding-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.review .containerreview .discription p {
+  padding-top: 24px;
+  padding-right: 221px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+
+@media only screen and (max-width: 992px) {
+  .discription {
+    padding-left: 21px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 560px;
+    height: 186px;
+    border-radius: 8px;
+    border: 1px solid rgba(33, 33, 33, 0.28);
+  }
+  .discription h3 {
+    padding-top: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    font-family: "Rubik";
+    color: rgb(33, 33, 33);
+  }
+  .discription h3 img {
+    padding-left: 24px;
+  }
+  .discription h5 {
+    padding-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .discription p {
+    padding-top: 24px;
+    padding-right: 221px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+}
+#footertop {
+  margin-top: 114px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+#footertop .border {
+  width: 1130px;
+  height: 249px;
+  border: 1px solid #E4E4E4;
+}
+#footertop .border .container {
+  background-color: white;
+}
+#footertop .border .container .methodsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#footertop .border .container .methodsgrid .items {
+  border-left: 1px solid #E4E4E4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#footertop .border .container .methodsgrid .items img {
+  padding-top: 46px;
+}
+#footertop .border .container .methodsgrid .items h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 22px;
+  padding-bottom: 12px;
+}
+#footertop .border .container .methodsgrid .items p {
+  line-height: 27.2px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  width: 200px;
+  text-align: center;
+  color: #212121;
+  opacity: 75%;
+}
+
+@media only screen and (max-width: 992px) {
+  #footertop .border {
+    margin-bottom: 100px;
+  }
+  #footertop .border .container .methodsgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.shopping .containershop {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.shopping .containershop .homeshop {
+  gap: 7px;
+  margin-top: 83px;
+  display: flex;
+  align-items: center;
+}
+.shopping .containershop .homeshop span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Poppins";
+  color: rgb(29, 29, 29);
+}
+.shopping .containershop .homeshop img {
+  color: rgb(43, 43, 43);
+}
+.shopping .containershop .homeshop p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Poppins";
+  color: rgba(29, 29, 29, 0.75);
+}
+.shopping .containershop .entry h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 68px;
+  font-family: "Rubik";
+  color: rgb(33, 33, 33);
+  margin-bottom: 48px;
+}
+.shopping .containershop .flexbox {
+  gap: 24px;
+  display: flex;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox {
+  width: 744px;
+  height: 211px;
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 16px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .imgbag {
+  display: flex;
+  justify-content: center;
+  width: 151px;
+  height: 179px;
+  border-radius: 8px;
+  border: 1px solid rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
+  margin-left: 17px;
+  margin-right: 24px;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag {
+  display: flex;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag h2 {
+  margin-right: 115px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  font-family: "Rubik";
+  color: rgb(33, 33, 33);
+  margin-bottom: 12px;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+  font-family: "Rubik";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag span {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+  margin-bottom: 8px;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag span p {
+  margin-left: 25px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .p1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .p2 {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag select {
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 3px;
+  width: 72px;
+  padding-left: 8px;
+  height: 32px;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag select option {
+  width: 31px;
+  height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.9);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .fav {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 17px;
+  right: 143px;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .fav .redp {
+  color: rgb(223, 66, 68);
+}
+.shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .rmv {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 17px;
+  right: 17px;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23.8px;
+  font-family: "Poppins";
+  color: rgba(33, 33, 33, 0.75);
+}
+.shopping .containershop .flexbox .terminal .orderbag {
+  background-color: rgb(249, 249, 249);
+  width: 360px;
+  height: 275px;
+  border-radius: 8px;
+  border: 1px solid rgb(249, 249, 249);
+  padding-left: 24px;
+  padding-top: 32px;
+}
+.shopping .containershop .flexbox .terminal .orderbag .subtotal {
+  display: flex;
+  gap: 131px;
+}
+.shopping .containershop .flexbox .terminal .orderbag .subtotal h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .flexbox .terminal .orderbag .subtotal p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .flexbox .terminal .shipping {
+  display: flex;
+  gap: 133px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+.shopping .containershop .flexbox .terminal .shipping h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .flexbox .terminal p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.2px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .total {
+  display: flex;
+  gap: 192px;
+}
+.shopping .containershop .total h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .total p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.6px;
+  font-family: "Poppins";
+  color: rgb(33, 33, 33);
+}
+.shopping .containershop .linedash {
+  width: 312px;
+  border: 1px dashed rgb(208, 208, 208);
+  margin-top: 24px;
+  margin-bottom: 22px;
+}
+.shopping .apply {
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(255, 105, 94);
+  padding-right: 60px;
+}
+.shopping .apply ::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  color: rgb(136, 136, 136);
+  font-family: "Poppins";
+  padding-left: 15px;
+}
+.shopping .apply input {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  border-top: 1px solid rgb(219, 219, 219);
+  border-left: 1px solid rgb(219, 219, 219);
+  border-right: none;
+  width: 210px;
+  height: 48px;
+}
+.shopping .apply a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.confirm {
+  margin-top: 23px;
+  margin-bottom: 16px;
+}
+.confirm button {
+  cursor: pointer;
+  width: 360px;
+  height: 52px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: rgb(223, 66, 68);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  font-family: "Montserrat";
+}
+
+.Cash button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 52px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27.2px;
+  font-family: "Montserrat";
+}
+
+@media only screen and (max-width: 992px) {
+  .shopping .containershop {
+    max-width: 1128px;
+    margin: 0 auto;
+  }
+  .shopping .containershop .homeshop {
+    gap: 7px;
+    margin-top: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopping .containershop .homeshop span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Poppins";
+    color: rgb(29, 29, 29);
+  }
+  .shopping .containershop .homeshop img {
+    color: rgb(43, 43, 43);
+  }
+  .shopping .containershop .homeshop p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Poppins";
+    color: rgba(29, 29, 29, 0.75);
+  }
+  .shopping .containershop .entry h1 {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 68px;
+    font-family: "Rubik";
+    color: rgb(33, 33, 33);
+    margin-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopping .containershop .flexbox {
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox {
+    width: 744px;
+    height: 211px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 16px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .imgbag {
+    display: flex;
+    justify-content: center;
+    width: 151px;
+    height: 179px;
+    border-radius: 8px;
+    border: 1px solid rgb(249, 249, 249);
+    background-color: rgb(249, 249, 249);
+    margin-left: 17px;
+    margin-right: 24px;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag {
+    display: flex;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag h2 {
+    margin-right: 115px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    font-family: "Rubik";
+    color: rgb(33, 33, 33);
+    margin-bottom: 12px;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .hbag h3 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.6px;
+    font-family: "Rubik";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag span {
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+    margin-bottom: 8px;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag span p {
+    margin-left: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .p1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .p2 {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag select {
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 3px;
+    width: 72px;
+    padding-left: 8px;
+    height: 32px;
+    margin-top: 8px;
+    margin-bottom: 28px;
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag select option {
+    width: 31px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.9);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .fav {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    right: 143px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .fav .redp {
+    color: rgb(223, 66, 68);
+  }
+  .shopping .containershop .flexbox .bagboxes .bagbox .aboutbag .rmv {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 17px;
+    right: 17px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.8px;
+    font-family: "Poppins";
+    color: rgba(33, 33, 33, 0.75);
+  }
+  .shopping .containershop .flexbox .terminal .orderbag {
+    background-color: rgb(249, 249, 249);
+    width: 360px;
+    height: 275px;
+    border-radius: 8px;
+    border: 1px solid rgb(249, 249, 249);
+    padding-left: 24px;
+    padding-top: 32px;
+  }
+  .shopping .containershop .flexbox .terminal .orderbag .subtotal {
+    display: flex;
+    gap: 131px;
+  }
+  .shopping .containershop .flexbox .terminal .orderbag .subtotal h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .flexbox .terminal .orderbag .subtotal p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .flexbox .terminal .shipping {
+    display: flex;
+    gap: 133px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  .shopping .containershop .flexbox .terminal .shipping h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .flexbox .terminal p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .total {
+    display: flex;
+    gap: 192px;
+  }
+  .shopping .containershop .total h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.6px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .total p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.6px;
+    font-family: "Poppins";
+    color: rgb(33, 33, 33);
+  }
+  .shopping .containershop .linedash {
+    width: 312px;
+    border: 1px dashed rgb(208, 208, 208);
+    margin-top: 24px;
+    margin-bottom: 22px;
+  }
+  .shopping .apply {
+    border-radius: 8px;
+    border: none;
+    background-color: rgb(255, 105, 94);
+    padding-right: 60px;
+  }
+  .shopping .apply ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    color: rgb(136, 136, 136);
+    font-family: "Poppins";
+    padding-left: 15px;
+  }
+  .shopping .apply input {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    border-top: 1px solid rgb(219, 219, 219);
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: none;
+    width: 210px;
+    height: 48px;
+  }
+  .shopping .apply a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    font-family: "Poppins";
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .confirm {
+    margin-top: 23px;
+    margin-bottom: 16px;
+  }
+  .confirm button {
+    cursor: pointer;
+    width: 360px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: rgb(223, 66, 68);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    font-family: "Montserrat";
+  }
+  .Cash button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 360px;
+    height: 52px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 27.2px;
+    font-family: "Montserrat";
+  }
+}
+#favorites {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+#favorites .main .container {
+  background-color: rgb(255, 255, 255);
+}
+#favorites .main .container .home {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-top: 32px;
+  padding-bottom: 6px;
+}
+#favorites .main .container .home a {
+  text-decoration: none;
+}
+#favorites .main .container .home .hometxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1D1D1D;
+}
+#favorites .main .container .home .fav {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1D1D1D;
+  opacity: 75%;
+}
+#favorites .main .container h1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 40px;
+  color: #212121;
+  padding-bottom: 32px;
+}
+#favorites .main .container .leftandright {
+  display: flex;
+  gap: 97px;
+}
+#favorites .main .container .leftandright .cardBox {
+  width: 264px;
+  height: 344px;
+  border: 1px solid #E4E4E4;
+  border-radius: 8px;
+}
+#favorites .main .container .leftandright .cardBox a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  text-decoration: none;
+}
+#favorites .main .container .leftandright .cardBox .imgbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 0 17px 14px;
+}
+#favorites .main .container .leftandright .cardBox .imgbox .imgtext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#favorites .main .container .leftandright .cardBox .imgbox .imgtext h3 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+#favorites .main .container .leftandright .cardBox .imgbox .imgtext p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+}
+#favorites .main .container .leftandright .cardBox .order {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #E4E4E4;
+  padding: 14px 0 14px 24px;
+}
+#favorites .main .container .leftandright .cardBox .favorites {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #E4E4E4;
+  border-left: 3px solid #007878;
+  padding: 14px 0 14px 24px;
+  background-color: #F9F9F9;
+}
+#favorites .main .container .leftandright .cardBox .comment {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #E4E4E4;
+  padding: 14px 0 14px 24px;
+}
+#favorites .main .container .leftandright .cardBox .address {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #E4E4E4;
+  padding: 14px 0 14px 24px;
+}
+#favorites .main .container .leftandright .cardBox .adjustment {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #E4E4E4;
+  padding: 14px 0 14px 24px;
+}
+#favorites .main .container .leftandright .bagsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags {
+  width: 360px;
+  height: 510px;
+  border-radius: 8px;
+  background-color: #F9F9F9;
+  position: relative;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .off {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #DF4244;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .off p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .new {
+  width: 79px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #43D167;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 16px;
+  top: 16px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .new p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .bagimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 11px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .bagimgg {
+  display: flex;
+  justify-content: center;
+  height: 253px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .stars {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .txtt {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 16px;
+  width: 302px;
+  line-height: 27px;
+  padding-left: 24px;
+  padding-bottom: 16px;
+  color: #000000;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .to {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  color: #F75145;
+  padding-left: 24px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .from {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #363636;
+  opacity: 75%;
+  padding-left: 18px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .btn {
+  width: 312px;
+  height: 48px;
+  border: 1px solid #212121;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 24px;
+}
+#favorites .main .container .leftandright .bagsgrid .bags .btn button {
+  border: none;
+  background: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+}
+
+@media only screen and (max-width: 992px) {
+  #favorites .main .container .home {
+    display: flex;
+    justify-content: center;
+  }
+  #favorites .main .container h1 {
+    text-align: center;
+  }
+  #favorites .main .container .leftandright {
+    display: flex;
+    justify-content: center;
+  }
+  #favorites .main .container .leftandright .cardBox {
+    display: none;
+  }
+  #favorites .main .container .leftandright .bagsgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+#addresses {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+#addresses .main .container {
+  background-color: rgb(255, 255, 255);
+}
+#addresses .main .container .home {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-top: 32px;
+  padding-bottom: 6px;
+}
+#addresses .main .container .home a {
+  text-decoration: none;
+}
+#addresses .main .container .home .hometxt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  color: #1d1d1d;
+}
+#addresses .main .container .home .address {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1d1d;
+  opacity: 75%;
+}
+#addresses .main .container h1 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 40px;
+  color: #212121;
+  padding-bottom: 32px;
+}
+#addresses .main .container .leftandright {
+  display: flex;
+  gap: 24px;
+}
+#addresses .main .container .leftandright .cardBox {
+  width: 264px;
+  height: 344px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+}
+#addresses .main .container .leftandright .cardBox a {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  text-decoration: none;
+}
+#addresses .main .container .leftandright .cardBox .imgbox {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 0 17px 14px;
+}
+#addresses .main .container .leftandright .cardBox .imgbox .imgtext {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#addresses .main .container .leftandright .cardBox .imgbox .imgtext h3 {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+#addresses .main .container .leftandright .cardBox .imgbox .imgtext p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+}
+#addresses .main .container .leftandright .cardBox .order {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0 14px 24px;
+}
+#addresses .main .container .leftandright .cardBox .favorites {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0 14px 24px;
+}
+#addresses .main .container .leftandright .cardBox .comment {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0 14px 24px;
+}
+#addresses .main .container .leftandright .cardBox .address {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0 14px 24px;
+  border-left: 3px solid #007878;
+  background-color: #f9f9f9;
+}
+#addresses .main .container .leftandright .cardBox .adjustment {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border-top: 1px solid #e4e4e4;
+  padding: 14px 0 14px 24px;
+}
+#addresses .main .container .leftandright .cardsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+#addresses .main .container .leftandright .cardsgrid .cardsbox {
+  width: 264px;
+  height: 309px;
+  border-radius: 8px;
+  border: 1px dashed #007878;
+  background-color: #f9f9f9;
+}
+#addresses .main .container .leftandright .cardsgrid .cardsbox .newaddress {
+  height: 309px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#addresses .main .container .leftandright .cardsgrid .cardsbox .newaddress img {
+  width: 47px;
+  height: 56px;
+  padding-bottom: 12px;
+}
+#addresses .main .container .leftandright .cardsgrid .cardsbox .newaddress p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+  opacity: 75%;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection {
+  width: 264px;
+  height: 309px;
+  border-radius: 8px;
+  border: 1px solid rgb(228, 228, 228);
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .homeandicon {
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .homeandicon p {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #212121;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  color: #212121;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .uk {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+  padding-top: 16px;
+  padding-left: 20px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .txt {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+  width: 230px;
+  height: 48px;
+  line-height: 23.8px;
+  padding-top: 8px;
+  padding-left: 20px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .num {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .editremove {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 55px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .editremove .edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e4;
+  gap: 10px;
+  border-radius: 8px;
+  width: 74px;
+  height: 36px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .editremove .edit p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #585858;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .editremove .remove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e4e4e4;
+  gap: 10px;
+  border-radius: 8px;
+  width: 106px;
+  height: 36px;
+}
+#addresses .main .container .leftandright .cardsgrid .homesection .editremove .remove p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  color: #212121;
+  opacity: 75%;
+}
+#addresses .main .container .leftandright .cardsgrid .first {
+  border: 1px solid #007878;
+}
+
+@media only screen and (max-width: 992px) {
+  #addresses .main .container .home {
+    display: flex;
+    justify-content: center;
+  }
+  #addresses .main .container h1 {
+    text-align: center;
+  }
+  #addresses .main .container .leftandright {
+    display: flex;
+    justify-content: center;
+  }
+  #addresses .main .container .leftandright .cardBox {
+    display: none;
+  }
+  #addresses .main .container .leftandright .cardsgrid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=main.css.map */
