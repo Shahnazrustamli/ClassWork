@@ -16,7 +16,7 @@ const Home = () => {
         {card &&
           card.map((item, index) => {
             return (
-              <Card style={{ width: "18rem" }}>
+              <Card key={index} style={{ width: "18rem" }}>
                 <div className="cardImage"><Card.Img className="image" variant="top" src={item.image} /></div>
                 <Card.Body>
                   <Card.Title>{item.title}</Card.Title>
